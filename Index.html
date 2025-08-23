@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabela de Velocidade</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo">
+  </header>
+
+  <main>
+    <table>
+      <!-- Primeiro bloco -->
+      <tr><td class="section-title" colspan="2"></td></tr>
+      <tr>
+        <td class="label-cell">Level</td>
+        <td><input type="number" id="level" min="1" value="1"></td>
+      </tr>
+
+      <!-- Segundo bloco -->
+      <tr><td class="section-title" colspan="2"></td></tr>
+      <tr>
+        <td class="label-cell">Velocidade Base</td>
+        <td><input type="text" id="velocidadeBase" readonly></td>
+      </tr>
+
+      <!-- Terceiro bloco -->
+      <tr><td class="section-title" colspan="2"></td></tr>
+      <tr>
+        <td class="label-cell">Magia</td>
+        <td>
+          <select id="magiaSelect">
+            <option value="nenhuma">Nenhuma</option>
+            <option value="haste">Haste</option>
+            <option value="strong-haste">Strong Haste</option>
+            <option value="charge">Charge</option>
+            <option value="swift-foot">Swift Foot</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td class="label-cell">Velocidade c/ Magia</td>
+        <td><input type="text" id="velocidadeMagia" readonly></td>
+      </tr>
+
+      <!-- Quarto bloco -->
+      <tr><td class="section-title" colspan="2"></td></tr>
+      <tr><td class="label-cell">Helmet</td>
+        <td>
+          <select id="helmetSelect">
+            <option value="Nenhum">Nenhum</option>
+            <option value="Crest of the Deep Seas">Crest of the Deep Seas</option>
+            <option value="Werewolf Helmet">Werewolf Helmet</option>
+            <option value="Depth Galea">Depth Galea</option>
+            <option value="Tiara of Power">Tiara of Power</option>
+            <option value="Helmet of the Deep">Helmet of the Deep</option>
+          </select>
+        </td>
+      </tr>
+      <tr><td class="label-cell">Armor</td>
+        <td>
+          <select id="armorSelect">
+            <option value="Nenhum">Nenhum</option>
+            <option value="Zaoan Armor">Zaoan Armor</option>
+            <option value="Prismatic Armor">Prismatic Armor</option>
+            <option value="Elite Draken Mail">Elite Draken Mail</option>
+            <option value="Swan Feather Cloak">Swan Feather Cloak</option>
+          </select>
+        </td>
+      </tr>
+      <tr><td class="label-cell">Legs</td>
+        <td>
+          <select id="legsSelect">
+            <option value="Nenhum">Nenhum</option>
+            <option value="Grasshopper Legs">Grasshopper Legs</option>
+          </select>
+        </td>
+      </tr>
+      <tr><td class="label-cell">Boots</td>
+        <td>
+          <select id="bootsSelect">
+            <option value="Nenhum">Nenhum</option>
+            <option value="Draken Boots">Draken Boots</option>
+            <option value="Zaoan Shoes">Zaoan Shoes</option>
+            <option value="Prismatic Boots">Prismatic Boots</option>
+            <option value="Depth Calcei">Depth Calcei</option>
+            <option value="Fur Boots">Fur Boots</option>
+            <option value="Boots of Haste">Boots of Haste</option>
+            <option value="Badger Boots">Badger Boots</option>
+            <option value="Oriental Shoes">Oriental Shoes</option>
+            <option value="Void Boots">Void Boots</option>
+            <option value="Cobra Boots">Cobra Boots</option>
+            <option value="Winged Boots">Winged Boots</option>
+            <option value="Pair of Soulstalkers">Pair of Soulstalkers</option>
+            <option value="Pair of Soulwalkers">Pair of Soulwalkers</option>
+            <option value="Feverbloom Boots">Feverbloom Boots</option>
+            <option value="Sanguine Galoshes">Sanguine Galoshes</option>
+            <option value="Sanguine Boots">Sanguine Boots</option>
+            <option value="Stoic Iks Boots">Stoic Iks Boots</option>
+            <option value="Soulsoles">Soulsoles</option>
+            <option value="Norcferatu Goretrampers">Norcferatu Goretrampers</option>
+          </select>
+        </td>
+      </tr>
+      <tr><td class="label-cell">Amulet</td>
+        <td>
+          <select id="amuletSelect">
+            <option value="Nenhum">Nenhum</option>
+            <option value="Beetle Necklace">Beetle Necklace</option>
+            <option value="Shrunken Head Necklace">Shrunken Head Necklace</option>
+          </select>
+        </td>
+      </tr>
+      <tr><td class="label-cell">Ring</td>
+        <td>
+          <select id="ringSelect">
+            <option value="Nenhum">Nenhum</option>
+            <option value="Time Ring">Time Ring</option>
+          </select>
+        </td>
+      </tr>
+      <tr><td class="label-cell">Shield</td>
+        <td>
+          <select id="shieldSelect">
+            <option value="Nenhum">Nenhum</option>
+            <option value="Sparking Rainbow Shield">Sparking Rainbow Shield</option>
+          </select>
+        </td>
+      </tr>
+      <tr><td class="label-cell">Montaria</td>
+        <td>
+          <select id="mountSelect">
+            <option value="Nao">NÃO</option>
+            <option value="Sim">SIM</option>
+          </select>
+        </td>
+      </tr>
+      <tr><td class="label-cell">Food</td>
+        <td>
+          <select id="foodSelect">
+            <option value="Nenhum">Nenhum</option>
+            <option value="Filled Jalapeno Peppers">Filled Jalapeno Peppers</option>
+            <option value="Demonic Candy Ball">Demonic Candy Ball</option>
+          </select>
+        </td>
+      </tr>
+      <tr><td class="label-cell">Trinket</td>
+        <td>
+          <select id="trinketSelect">
+            <option value="Nenhum">Nenhum</option>
+            <option value="Magical Torch">Magical Torch</option>
+            <option value="Celestial Torch">Celestial Torch</option>
+          </select>
+        </td>
+      </tr>
+
+      <!-- Quinto bloco -->
+      <tr><td class="section-title" colspan="2"></td></tr>
+      <tr>
+        <td class="label-cell">Velocidade Total</td>
+        <td><input type="text" id="velocidadeTotal" readonly></td>
+      </tr>
+
+      <!-- Sexto bloco - Terrenos -->
+      <tr><td class="section-title" colspan="2"></td></tr>
+      <tr><td class="label-cell">Ponte</td><td id="cond-ponte">❌</td></tr>
+      <tr><td class="label-cell">Cidades e Depot</td><td id="cond-cidades-depot">❌</td></tr>
+      <tr><td class="label-cell">Roshamull / Terra</td><td id="cond-roshamull-terra">❌</td></tr>
+      <tr><td class="label-cell">Darashia</td><td id="cond-darashia">❌</td></tr>
+      <tr><td class="label-cell">The Hive</td><td id="cond-the-hive">❌</td></tr>
+      <tr><td class="label-cell">Grama / Cascalho</td><td id="cond-grama-cascalho">❌</td></tr>
+      <tr><td class="label-cell">Areia e Neve</td><td id="cond-areia-neve">❌</td></tr>
+      <tr><td class="label-cell">Lama</td><td id="cond-lama">❌</td></tr>
+      <tr><td class="label-cell">Underwater</td><td id="cond-underwater">❌</td></tr>
+    </table>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
