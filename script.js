@@ -19,9 +19,9 @@
   const terrenosMin = {
     ponte: 499,
     cidades: 592,
-    terra: 696,       // Roshamull / Terra
+    terra: 696,      
     darashia: 813,
-    hive: 876,        // The Hive
+    hive: 876,       
     grama: 1258,
     areia: 1443,
     lama: 2444,
@@ -94,7 +94,7 @@
     document.body.classList.toggle("dark-mode");
     const dark = document.body.classList.contains("dark-mode");
     localStorage.setItem("theme", dark ? "dark" : "light");
-    toggleBtn.textContent = dark ? "🌙 Modo Escuro" : "☀️ Modo Claro";
+    toggleBtn.textContent = dark ? "☀️ Modo Claro" : "🌙 Modo Escuro";
   });
 
   // Primeira atualização garante preenchimento de todos os campos e ícones
