@@ -94,7 +94,7 @@
     document.body.classList.toggle("dark-mode");
     const dark = document.body.classList.contains("dark-mode");
     localStorage.setItem("theme", dark ? "dark" : "light");
-    toggleBtn.textContent = dark ? "🌙 Modo Escuro" : "☀️ Modo Claro";
+    toggleBtn.textContent = dark ? "☀️ Modo Claro" : "🌙 Modo Escuro";
   });
 
   // Primeira atualização garante preenchimento de todos os campos e ícones
